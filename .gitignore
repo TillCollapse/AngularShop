@@ -46,5 +46,5 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
-app/bower-componets/**
+app/bower_componets/**
 node_modules/**
