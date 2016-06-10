@@ -1,0 +1,20 @@
+{
+  "name": "w",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "bower": "^1.7.9",
+    "gulp": "^3.9.1"
+  },
+  "devDependencies": {
+    "gulp-connect": "^4.0.0",
+    "gulp-jshint": "^2.0.1",
+    "jshint": "^2.9.2"
+  }
+}
