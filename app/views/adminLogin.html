@@ -1,0 +1,24 @@
+<div class="well" ng-controller="authCtrl">
+    <div class="alert alert-info" ng-hide="authenticationError">
+        Aby sie uwierzytelnić podaj nazwę użytkownika i hasło, a następnie kliknij
+        przycisk zaloguj    
+    </div>
+    <div class="alert alert-danger" ng-show="authenticationError">
+        Uwierzytelnienie nie powiodał się ( {{ authenticationError.status }})
+        Spróbuj ponownie
+    </div>
+    <form name="authForm" novalidate>
+        <div class="form-group">
+            <label>Nazwa uzytkownika</label>
+            <input name="username" class="form-control" ng-model="username" required />
+        </div>
+        <div class="form-group">
+            <label>Hasło</label>
+            <input name="password" class="form-control" ng-model="password" required />
+        </div>
+        <div class="text-center">
+            <button ng-click="authenticate(username, password)" ng-disabled=authForm.$invalid class="btn btn-primary">
+            Zaloguj
+            </button>
+        </div>
+    </form>
